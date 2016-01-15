@@ -9,10 +9,6 @@ angular.module('listings').controller('ListingsController', ['$scope', 'Listings
     $scope.search = function() {
       $scope.searchQuery = angular.copy($scope.query);
     };
-    $scope.enter = function() {
-      if (keyEvent.which === 13)
-        $scope.search();
-    }
     $scope.addListing = function() {
       $scope.add.code = angular.uppercase($scope.add.code);
       $scope.listings.push($scope.add);
