@@ -17,11 +17,7 @@
                 Implement a way to filter through listings using the search bar 
 
               -->
-            <span class="input-group-btn">
-	      <button class="btn btn-secondary" type="button" ng-click="search()">
-		<span class="glyphicon glyphicon-search"></span>
-	      </button>
-	    </span>
+            <span class="input-group-addon" id="sizing-addon1"><span class="glyphicon glyphicon-search"></span></span>
             <input type="text" class="form-control" placeholder="Search" ng-model="query">
           </div>
           <div class="tableWrapper">
@@ -31,7 +27,7 @@
                 <th>Building Name</th>
                 <th></th>
               </tr>
-	      <tr ng-repeat="listing in listings | filter:searchQuery | orderBy:'code'">
+	      <tr ng-repeat="listing in listings | filter:query | orderBy:'code'">
                 <th ng-click="showDetails(listing)">{{listing.code}}</th>
                 <th ng-click="showDetails(listing)">{{listing.name}}</th>
                 <th><button type="button" class="btn btn-danger btn-xs" ng-click="deleteListing(listing)">Remove</button></th>

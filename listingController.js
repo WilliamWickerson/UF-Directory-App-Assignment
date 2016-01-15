@@ -6,9 +6,6 @@ angular.module('listings').controller('ListingsController', ['$scope', 'Listings
       Implement these functions in the controller to make your application function 
       as described in the assignment spec. 
      */
-    $scope.search = function() {
-      $scope.searchQuery = angular.copy($scope.query);
-    };
     $scope.addListing = function() {
       $scope.add.code = angular.uppercase($scope.add.code);
       $scope.listings.push($scope.add);
