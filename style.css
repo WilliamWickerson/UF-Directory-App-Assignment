@@ -6,3 +6,32 @@
   max-height: 400px;
   overflow: auto;
 }
+
+.input-group-btn {
+  border-color: #CBCBCB;
+}
+
+.btn-danger {
+  background-color: transparent;
+  border-color: transparent;
+  color: #666;
+}
+
+.btn-danger:hover {
+  background-color: red;
+  border-color: black;
+}
+
+.shit {
+  line-height: 25px;
+}
+
+.move {
+  position: absolute;
+  left: 25%;
+  height: 25px;
+}
+
+div.jumbotron h2 {
+  margin-left: 17%;
+}
