@@ -13,7 +13,6 @@ angular.module('listings').controller('ListingsController', ['$scope', 'Listings
     };
     $scope.deleteListing = function(index) {
       $scope.listings.splice($scope.listings.indexOf(index),1);
-      $scope.listing = null;
     };
     $scope.showDetails = function(index) {
       $scope.detailedInfo = index;
